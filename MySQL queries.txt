@@ -1,0 +1,5 @@
+create database weather;
+ALTER DATABASE weather DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+use weather;
+create table history (id int PRIMARY KEY AUTO_INCREMENT NOT NULL, ip varchar(40) NOT NULL, date_from varchar(10) NOT NULL, date_to varchar(10) NOT NULL, city varchar(50) NOT NULL );
+ALTER TABLE history DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
